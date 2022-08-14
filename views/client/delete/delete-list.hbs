@@ -1,0 +1,14 @@
+<table class="container">
+    <tr class="header-row">
+        <td class="col">#ID</td>
+        <td class="col">Nombre Completo</td>
+        <td class="col">Eliminar</td>
+    {{#each data}}
+    <tr class="row">
+        <td class="col">{{idClientes}}</td>
+        <td class="col">{{NombreCliente}} {{ApellidoCliente}}</td>
+        <td class="col"><a href="/client/delete/{{idClientes}}">Eliminar</a></td>
+
+    </tr>
+    {{/each}}
+</table>

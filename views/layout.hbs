@@ -5,6 +5,10 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    {{#if success}}
+      <div class="msg">{{success}}</div>
+    {{/if}}
+  
     {{{body}}}
   </body>
 </html>

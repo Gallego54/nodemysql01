@@ -1,0 +1,15 @@
+<form action="/client/update/{{data.idClientes}}" class="form-control" method="POST">
+    <input name="NombreCliente" value="{{data.NombreCliente}}" placeholder="Nombre" type="text">
+    <input name="ApellidoCliente" value="{{data.ApellidoCliente}}" placeholder="Apellido" type="text">
+    <input name="FechaNacCliente" value="{{toFormatDef data.FechaNacCliente}}" placeholder="Fecha" type="date">
+    <input name="PesoCliente" value="{{data.PesoCliente}}" step="0.01" placeholder="Peso" type="number">
+    <input name="AlturaCliente" value="{{data.AlturaCliente}}" step="0.01" placeholder="Altura" type="number">
+    <input name="DomicilioCliente" value="{{data.DomicilioCliente}}" placeholder="Domicilio" type="text">
+    <input name="CodPostal" value="{{data.CodPostal}}" placeholder="CodPostal" type="number">
+    <input name="Movil01Cliente" value="{{data.Movil01Cliente}}" placeholder="Movil" type="number">
+    <input name="Movil02Cliente" value="{{data.Movil02Cliente}}" placeholder="Movil" type="number">
+    <input name="EmailCliente" value="{{data.EmailCliente}}" placeholder="Email" type="email">
+
+
+    <input type="submit">
+</form>
